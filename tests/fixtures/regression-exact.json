@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "A",
+    "type": "fixed",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "154"
+      ],
+      [
+        "-267"
+      ],
+      [
+        "-64"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 2,
+    "name": "B",
+    "type": "fixed",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "107"
+      ],
+      [
+        "-104"
+      ],
+      [
+        "64"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 3,
+    "name": "C",
+    "type": "fixed",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "340"
+      ],
+      [
+        "91"
+      ],
+      [
+        "-64"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 4,
+    "name": "D",
+    "type": "fixed",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "93"
+      ],
+      [
+        "-33"
+      ],
+      [
+        "-64"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 5,
+    "name": "ω",
+    "type": "circle3",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "20792832"
+      ],
+      [
+        "73507832"
+      ],
+      [
+        "-11986008"
+      ],
+      [
+        "-255398659"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 6,
+    "name": "P",
+    "type": "orthocenter",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "6527978"
+      ],
+      [
+        "-1425741"
+      ],
+      [
+        "-2599104"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 7,
+    "name": "a",
+    "type": "line",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "7936"
+      ],
+      [
+        "-15808"
+      ],
+      [
+        "19683"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 8,
+    "name": "b",
+    "type": "line",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "8768"
+      ],
+      [
+        "12800"
+      ],
+      [
+        "6141"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 9,
+    "name": "c",
+    "type": "line",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "14976"
+      ],
+      [
+        "3904"
+      ],
+      [
+        "19749"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 10,
+    "name": "Q",
+    "type": "otherIntersection",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "65204177347"
+      ],
+      [
+        "518726791305"
+      ],
+      [
+        "-151987804608"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 11,
+    "name": "R",
+    "type": "otherIntersection",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "732298147687"
+      ],
+      [
+        "-428341594555"
+      ],
+      [
+        "-152746742976"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 12,
+    "name": "S",
+    "type": "otherIntersection",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "341774850593"
+      ],
+      [
+        "418777933571"
+      ],
+      [
+        "198532559040"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 13,
+    "name": "d",
+    "type": "line",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "11456"
+      ],
+      [
+        "-5952"
+      ],
+      [
+        "52397"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 14,
+    "name": "e",
+    "type": "line",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "832"
+      ],
+      [
+        "28608"
+      ],
+      [
+        "45097"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 15,
+    "name": "f",
+    "type": "line",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "23744"
+      ],
+      [
+        "16704"
+      ],
+      [
+        "-12553"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 16,
+    "name": "T",
+    "type": "reflect",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "164392886452"
+      ],
+      [
+        "-109347750197"
+      ],
+      [
+        "-76373371488"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 17,
+    "name": "U",
+    "type": "reflect",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "92300639849"
+      ],
+      [
+        "20349387232"
+      ],
+      [
+        "-49633139760"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 18,
+    "name": "V",
+    "type": "reflect",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "12217888367"
+      ],
+      [
+        "-10716049749"
+      ],
+      [
+        "-37996951152"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  },
+  {
+    "id": 19,
+    "name": "ω1",
+    "type": "circle3",
+    "degree": 0,
+    "exact": true,
+    "cancelled": 0,
+    "nominalDegree": 0,
+    "infinityCancel": 0,
+    "v": [
+      [
+        "53056865311961088"
+      ],
+      [
+        "147826372061228528"
+      ],
+      [
+        "-64553226728817696"
+      ],
+      [
+        "56033238115937485"
+      ]
+    ],
+    "qv": null,
+    "dv": null,
+    "common": null,
+    "qcommon": null,
+    "error": null
+  }
+]

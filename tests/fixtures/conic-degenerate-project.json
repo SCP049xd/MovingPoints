@@ -1,0 +1,200 @@
+{
+  "format": "mmp-studio-1",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "A",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -97,
+        "qy": 144,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": 148,
+        "qy": -131,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -343,
+        "qy": -123,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "a",
+      "type": "line",
+      "parents": [
+        3,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "P",
+      "type": "moveLine",
+      "parents": [
+        4
+      ],
+      "meta": {
+        "qx": -194,
+        "qy": -128,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 6,
+      "name": "b",
+      "type": "line",
+      "parents": [
+        5,
+        1
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 7,
+      "name": "d",
+      "type": "bisector",
+      "parents": [
+        4,
+        6
+      ],
+      "meta": {},
+      "visible": false
+    },
+    {
+      "id": 8,
+      "name": "c",
+      "type": "bisectorBranch",
+      "parents": [
+        7
+      ],
+      "meta": {
+        "branch": 0
+      },
+      "visible": true
+    },
+    {
+      "id": 9,
+      "name": "e",
+      "type": "bisectorBranch",
+      "parents": [
+        7
+      ],
+      "meta": {
+        "branch": 1
+      },
+      "visible": true
+    },
+    {
+      "id": 10,
+      "name": "D",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": 123,
+        "qy": -55,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 11,
+      "name": "Q",
+      "type": "moveLine",
+      "parents": [
+        4
+      ],
+      "meta": {
+        "qx": -64,
+        "qy": -123,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 12,
+      "name": "ω",
+      "type": "circle3",
+      "parents": [
+        11,
+        1,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 13,
+      "name": "R",
+      "type": "otherIntersection",
+      "parents": [
+        1,
+        6,
+        12
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 14,
+      "name": "S",
+      "type": "arcMidpoint",
+      "parents": [
+        2,
+        1,
+        13
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 15,
+      "name": "C1",
+      "type": "conic",
+      "parents": [
+        13,
+        5,
+        11,
+        1,
+        10
+      ],
+      "meta": {},
+      "visible": true
+    }
+  ],
+  "nextId": 16,
+  "selected": 15,
+  "statements": [],
+  "nextStatementId": 1,
+  "cam": {
+    "cx": 10.06305175328932,
+    "cy": -3.455057748463276,
+    "zoom": 24.90456868174314
+  },
+  "animationConstraints": {
+    "fixedPointIds": []
+  }
+}

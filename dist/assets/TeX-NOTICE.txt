@@ -1,0 +1,10 @@
+Local PDF compilation: SwiftLaTeX PDFTeX 0.3.0 (release 20-02-2022)
+https://github.com/SwiftLaTeX/SwiftLaTeX
+Copyright (C) 2019 Elliott Wen.
+EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0.
+The JavaScript resource lookup is modified to use a bundled, local-only manifest.
+
+The bundled TeX format was generated with this WASM engine from the installed
+TeX Live LaTeX2e 2023-11-01 distribution. LaTeX packages: LPPL 1.3c.
+Latin Modern fonts: GUST Font License (based on LPPL).
+Package files retain their original copyright and license notices in the bundle.

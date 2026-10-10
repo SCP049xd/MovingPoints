@@ -1,0 +1,664 @@
+[
+  {
+    "pointId": 20,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "-9188479",
+        "1498251",
+        "5198208"
+      ],
+      "dx": -3319709,
+      "dy": 20188023
+    },
+    "carrierId": 0,
+    "title": "Przedefiniuj ω: środek O_ω w ruchu w kierunku A; okrąg przez A",
+    "detail": "Okrąg ω jest odtąd wyznaczony przez środek O_ω oraz punkt A na okręgu. Zamiast zachować stary promień, zachowujemy przynależność A do okręgu.",
+    "rewires": [
+      {
+        "id": 5,
+        "type": "circle",
+        "parents": [
+          20,
+          1
+        ],
+        "meta": {}
+      }
+    ],
+    "additions": [
+      {
+        "id": 20,
+        "name": "O_ω",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -9188479,
+          "qy": 1498251,
+          "unit": 5198208
+        },
+        "visible": true
+      }
+    ],
+    "changedCircleId": 5,
+    "frozenId": null,
+    "anchorKind": "original",
+    "method": "circle-redefinition",
+    "constrained": false
+  },
+  {
+    "pointId": 20,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "-9188479",
+        "1498251",
+        "5198208"
+      ],
+      "dx": -20188023,
+      "dy": -3319709
+    },
+    "carrierId": 0,
+    "title": "Przedefiniuj ω: środek O_ω w ruchu prostopadle do O_ωA; okrąg przez A",
+    "detail": "Okrąg ω jest odtąd wyznaczony przez środek O_ω oraz punkt A na okręgu. Zamiast zachować stary promień, zachowujemy przynależność A do okręgu.",
+    "rewires": [
+      {
+        "id": 5,
+        "type": "circle",
+        "parents": [
+          20,
+          1
+        ],
+        "meta": {}
+      }
+    ],
+    "additions": [
+      {
+        "id": 20,
+        "name": "O_ω",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -9188479,
+          "qy": 1498251,
+          "unit": 5198208
+        },
+        "visible": true
+      }
+    ],
+    "changedCircleId": 5,
+    "frozenId": null,
+    "anchorKind": "original",
+    "method": "circle-redefinition",
+    "constrained": false
+  },
+  {
+    "pointId": 20,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "-9188479",
+        "1498251",
+        "5198208"
+      ],
+      "dx": 17879233,
+      "dy": -9945339
+    },
+    "carrierId": 0,
+    "title": "Przedefiniuj ω: środek O_ω w ruchu w kierunku B; okrąg przez B",
+    "detail": "Okrąg ω jest odtąd wyznaczony przez środek O_ω oraz punkt B na okręgu. Zamiast zachować stary promień, zachowujemy przynależność B do okręgu.",
+    "rewires": [
+      {
+        "id": 5,
+        "type": "circle",
+        "parents": [
+          20,
+          2
+        ],
+        "meta": {}
+      }
+    ],
+    "additions": [
+      {
+        "id": 20,
+        "name": "O_ω",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -9188479,
+          "qy": 1498251,
+          "unit": 5198208
+        },
+        "visible": true
+      }
+    ],
+    "changedCircleId": 5,
+    "frozenId": null,
+    "anchorKind": "original",
+    "method": "circle-redefinition",
+    "constrained": false
+  },
+  {
+    "pointId": 20,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "-9188479",
+        "1498251",
+        "5198208"
+      ],
+      "dx": 9945339,
+      "dy": 17879233
+    },
+    "carrierId": 0,
+    "title": "Przedefiniuj ω: środek O_ω w ruchu prostopadle do O_ωB; okrąg przez B",
+    "detail": "Okrąg ω jest odtąd wyznaczony przez środek O_ω oraz punkt B na okręgu. Zamiast zachować stary promień, zachowujemy przynależność B do okręgu.",
+    "rewires": [
+      {
+        "id": 5,
+        "type": "circle",
+        "parents": [
+          20,
+          2
+        ],
+        "meta": {}
+      }
+    ],
+    "additions": [
+      {
+        "id": 20,
+        "name": "O_ω",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -9188479,
+          "qy": 1498251,
+          "unit": 5198208
+        },
+        "visible": true
+      }
+    ],
+    "changedCircleId": 5,
+    "frozenId": null,
+    "anchorKind": "original",
+    "method": "circle-redefinition",
+    "constrained": false
+  },
+  {
+    "pointId": 20,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "-9188479",
+        "1498251",
+        "5198208"
+      ],
+      "dx": -18427001,
+      "dy": -8889453
+    },
+    "carrierId": 0,
+    "title": "Przedefiniuj ω: środek O_ω w ruchu w kierunku C; okrąg przez C",
+    "detail": "Okrąg ω jest odtąd wyznaczony przez środek O_ω oraz punkt C na okręgu. Zamiast zachować stary promień, zachowujemy przynależność C do okręgu.",
+    "rewires": [
+      {
+        "id": 5,
+        "type": "circle",
+        "parents": [
+          20,
+          3
+        ],
+        "meta": {}
+      }
+    ],
+    "additions": [
+      {
+        "id": 20,
+        "name": "O_ω",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -9188479,
+          "qy": 1498251,
+          "unit": 5198208
+        },
+        "visible": true
+      }
+    ],
+    "changedCircleId": 5,
+    "frozenId": null,
+    "anchorKind": "original",
+    "method": "circle-redefinition",
+    "constrained": false
+  },
+  {
+    "pointId": 20,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "-9188479",
+        "1498251",
+        "5198208"
+      ],
+      "dx": 8889453,
+      "dy": -18427001
+    },
+    "carrierId": 0,
+    "title": "Przedefiniuj ω: środek O_ω w ruchu prostopadle do O_ωC; okrąg przez C",
+    "detail": "Okrąg ω jest odtąd wyznaczony przez środek O_ω oraz punkt C na okręgu. Zamiast zachować stary promień, zachowujemy przynależność C do okręgu.",
+    "rewires": [
+      {
+        "id": 5,
+        "type": "circle",
+        "parents": [
+          20,
+          3
+        ],
+        "meta": {}
+      }
+    ],
+    "additions": [
+      {
+        "id": 20,
+        "name": "O_ω",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -9188479,
+          "qy": 1498251,
+          "unit": 5198208
+        },
+        "visible": true
+      }
+    ],
+    "changedCircleId": 5,
+    "frozenId": null,
+    "anchorKind": "original",
+    "method": "circle-redefinition",
+    "constrained": false
+  },
+  {
+    "pointId": 1,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "154",
+        "-267",
+        "-64"
+      ],
+      "dx": 61,
+      "dy": -234
+    },
+    "title": "A po prostej w kierunku D",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie A; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 1,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "154",
+        "-267",
+        "-64"
+      ],
+      "dx": -93,
+      "dy": -179
+    },
+    "title": "A po prostej w kierunku C",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie A; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 1,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "154",
+        "-267",
+        "-64"
+      ],
+      "dx": -261,
+      "dy": 371
+    },
+    "title": "A po prostej w kierunku B",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie A; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 1,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "154",
+        "-267",
+        "-64"
+      ],
+      "dx": -247,
+      "dy": -124
+    },
+    "title": "A po prostej równolegle do a",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie A; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 1,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "154",
+        "-267",
+        "-64"
+      ],
+      "dx": 200,
+      "dy": -137
+    },
+    "title": "A po prostej równolegle do b",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie A; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 2,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "107",
+        "-104",
+        "64"
+      ],
+      "dx": 200,
+      "dy": -137
+    },
+    "title": "B po prostej w kierunku D",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie B; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 2,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "107",
+        "-104",
+        "64"
+      ],
+      "dx": 447,
+      "dy": -13
+    },
+    "title": "B po prostej w kierunku C",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie B; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 2,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "107",
+        "-104",
+        "64"
+      ],
+      "dx": 261,
+      "dy": -371
+    },
+    "title": "B po prostej w kierunku A",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie B; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 2,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "107",
+        "-104",
+        "64"
+      ],
+      "dx": -247,
+      "dy": -124
+    },
+    "title": "B po prostej równolegle do a",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie B; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 2,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "107",
+        "-104",
+        "64"
+      ],
+      "dx": 61,
+      "dy": -234
+    },
+    "title": "B po prostej równolegle do c",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie B; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 3,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "340",
+        "91",
+        "-64"
+      ],
+      "dx": 247,
+      "dy": 124
+    },
+    "title": "C po prostej w kierunku D",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie C; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 3,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "340",
+        "91",
+        "-64"
+      ],
+      "dx": 93,
+      "dy": 179
+    },
+    "title": "C po prostej w kierunku A",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie C; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 3,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "340",
+        "91",
+        "-64"
+      ],
+      "dx": -447,
+      "dy": 13
+    },
+    "title": "C po prostej w kierunku B",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie C; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 3,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "340",
+        "91",
+        "-64"
+      ],
+      "dx": 200,
+      "dy": -137
+    },
+    "title": "C po prostej równolegle do b",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie C; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 3,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "340",
+        "91",
+        "-64"
+      ],
+      "dx": 61,
+      "dy": -234
+    },
+    "title": "C po prostej równolegle do c",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie C; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 4,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "93",
+        "-33",
+        "-64"
+      ],
+      "dx": -61,
+      "dy": 234
+    },
+    "title": "D po prostej w kierunku A",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie D; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 4,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "93",
+        "-33",
+        "-64"
+      ],
+      "dx": -200,
+      "dy": 137
+    },
+    "title": "D po prostej w kierunku B",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie D; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 4,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "93",
+        "-33",
+        "-64"
+      ],
+      "dx": -247,
+      "dy": -124
+    },
+    "title": "D po prostej w kierunku C",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie D; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 4,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "93",
+        "-33",
+        "-64"
+      ],
+      "dx": -93,
+      "dy": -179
+    },
+    "title": "D po prostej równolegle do d",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie D; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  },
+  {
+    "pointId": 4,
+    "carrierId": 0,
+    "type": "moveFree",
+    "parents": [],
+    "meta": {
+      "anchor": [
+        "93",
+        "-33",
+        "-64"
+      ],
+      "dx": 447,
+      "dy": -13
+    },
+    "title": "D po prostej równolegle do e",
+    "detail": "Nowa prosta przechodzi przez początkowe położenie D; pozostałe elementy konstrukcji są przeliczane na nowo.",
+    "constrained": false,
+    "method": "single-point"
+  }
+]

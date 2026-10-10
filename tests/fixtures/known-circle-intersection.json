@@ -1,0 +1,273 @@
+{
+  "format": "mmp-studio-1",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "O",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -52,
+        "qy": 100,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "R",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -139,
+        "qy": -23,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "c",
+      "type": "circle",
+      "parents": [
+        1,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "A",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -162,
+        "qy": 429,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "a",
+      "type": "tangentFrom",
+      "parents": [
+        4,
+        3
+      ],
+      "meta": {
+        "branch": 0
+      },
+      "visible": true
+    },
+    {
+      "id": 6,
+      "name": "b",
+      "type": "tangentFrom",
+      "parents": [
+        4,
+        3
+      ],
+      "meta": {
+        "branch": 1
+      },
+      "visible": true
+    },
+    {
+      "id": 7,
+      "name": "P",
+      "type": "contactFrom",
+      "parents": [
+        4,
+        3
+      ],
+      "meta": {
+        "branch": 0
+      },
+      "visible": true
+    },
+    {
+      "id": 8,
+      "name": "Q",
+      "type": "contactFrom",
+      "parents": [
+        4,
+        3
+      ],
+      "meta": {
+        "branch": 1
+      },
+      "visible": true
+    },
+    {
+      "id": 9,
+      "name": "D",
+      "type": "moveCircle",
+      "parents": [
+        3
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 10,
+      "name": "d",
+      "type": "tangentAt",
+      "parents": [
+        9,
+        3
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 11,
+      "name": "B",
+      "type": "intersection",
+      "parents": [
+        6,
+        10
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 12,
+      "name": "C",
+      "type": "intersection",
+      "parents": [
+        5,
+        10
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 13,
+      "name": "e",
+      "type": "line",
+      "parents": [
+        4,
+        1
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 14,
+      "name": "f",
+      "type": "perpendicular",
+      "parents": [
+        1,
+        13
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 15,
+      "name": "S",
+      "type": "midpoint",
+      "parents": [
+        12,
+        11
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 16,
+      "name": "T",
+      "type": "intersection",
+      "parents": [
+        5,
+        14
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 17,
+      "name": "U",
+      "type": "intersection",
+      "parents": [
+        6,
+        14
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 18,
+      "name": "c1",
+      "type": "circle3",
+      "parents": [
+        16,
+        17,
+        4
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 19,
+      "name": "c2",
+      "type": "circle3",
+      "parents": [
+        12,
+        4,
+        11
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 20,
+      "name": "E",
+      "type": "root",
+      "parents": [
+        18,
+        19
+      ],
+      "meta": {
+        "branch": 0
+      },
+      "visible": true
+    },
+    {
+      "id": 21,
+      "name": "g",
+      "type": "line",
+      "parents": [
+        20,
+        9
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 22,
+      "name": "h",
+      "type": "line",
+      "parents": [
+        4,
+        15
+      ],
+      "meta": {},
+      "visible": true
+    }
+  ],
+  "nextId": 23,
+  "selected": 20,
+  "statements": [],
+  "nextStatementId": 1,
+  "cam": {
+    "cx": 2.0930402824647265,
+    "cy": 3.2406415441165493,
+    "zoom": 43.25233705339076
+  },
+  "animationConstraints": {
+    "fixedPointIds": []
+  }
+}

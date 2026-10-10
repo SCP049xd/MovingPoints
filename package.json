@@ -1,0 +1,16 @@
+{
+  "name": "mmp-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Exact moving-points geometry editor with an extensible construction registry",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.js",
+    "benchmark": "node scripts/benchmark.mjs"
+  }
+}

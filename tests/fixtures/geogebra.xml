@@ -1,0 +1,18 @@
+<geogebra><construction>
+  <element type="point" label="A"><coords x="0" y="0" z="1"/></element>
+  <element type="point" label="B"><coords x="4" y="0" z="1"/></element>
+  <element type="point" label="C"><coords x="0" y="3" z="1"/></element>
+  <command name="Midpoint"><input a0="A" a1="B"/><output a0="M"/></command>
+  <element type="point" label="M"><coords x="2" y="0" z="1"/></element>
+  <command name="Line"><input a0="A" a1="B"/><output a0="g"/></command>
+  <element type="line" label="g"/>
+  <command name="OrthogonalLine"><input a0="C" a1="g"/><output a0="h"/></command>
+  <element type="line" label="h"/>
+  <command name="Intersect"><input a0="g" a1="h"/><output a0="F"/></command>
+  <element type="point" label="F"><coords x="0" y="0" z="1"/></element>
+  <command name="Circle"><input a0="A" a1="B"/><output a0="c"/></command>
+  <element type="conic" label="c"/>
+  <command name="Intersect"><input a0="h" a1="c"/><output a0="P" a1="Q"/></command>
+  <element type="point" label="P"><coords x="0" y="-4" z="1"/></element>
+  <element type="point" label="Q"><coords x="0" y="4" z="1"/></element>
+</construction></geogebra>

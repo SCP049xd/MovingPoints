@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta id="theme-color" name="theme-color" content="#f8fafc">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%23090d14%27/%3E%3Cpath d=%27M12 48L32 12L52 48Z%27 fill=%27none%27 stroke=%27%235cdbc2%27 stroke-width=%274%27/%3E%3C/svg%3E">
+<title>MMP Studio 1.0 — geometria w ruchu</title>
+
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("mmp-studio-theme")==="dark"?"dark":"light";}catch{}</script>
+<link rel="stylesheet" href="/styles/studio.css">
+</head>
+<body>
+<div id="app">
+  <div class="body">
+    <aside class="sidebar left" id="left-sidebar">
+      <div class="sidebar-content">
+        <div class="side-brandline">
+          <span class="side-brand" title="MMP Studio · Release 1.0">MMP <b>Studio</b></span>
+          <div class="side-mini-actions">
+            <button class="iconbtn" id="undo" title="Cofnij (Ctrl+Z)" aria-label="Cofnij">↶</button>
+            <button class="iconbtn" id="redo" title="Ponów (Ctrl+Y)" aria-label="Ponów">↷</button>
+            <div class="project-menu-wrap" id="project-menu-wrap">
+              <button class="project-menu-button project-menu-icon" type="button" id="project-menu-button"
+                aria-label="Menu projektu" aria-haspopup="true" aria-expanded="false" aria-controls="project-menu" title="Menu projektu">
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4.5 5.5h11M4.5 10h11M4.5 14.5h11"/></svg>
+              </button>
+              <div class="project-menu" id="project-menu" role="group" aria-label="Operacje na projekcie" hidden>
+                <button type="button" id="new"><span aria-hidden="true">＋</span><span data-i18n="newProject">Nowa konstrukcja</span></button>
+                <button type="button" id="import-geogebra"><span aria-hidden="true">↥</span><span data-i18n="importGeo">Importuj z GeoGebry</span></button>
+                <button type="button" id="load"><span aria-hidden="true">↥</span><span data-i18n="open">Otwórz projekt</span></button>
+                <div class="project-menu-rule"></div>
+                <details class="export-menu"><summary data-i18n="export">Eksport</summary>
+<button type="button" id="save"><span aria-hidden="true">⇩</span><span data-i18n="save">Zapisz projekt</span></button>
+                <button type="button" id="export-degree-tex"><span aria-hidden="true">⇩</span><span data-i18n="proofTex">Dowód · TeX</span></button>
+                <button type="button" id="export-degree-pdf"><span aria-hidden="true">⇩</span><span data-i18n="proofPdf">Dowód · PDF</span></button>
+                <button type="button" id="export-tikz"><span aria-hidden="true">⇩</span><span data-i18n="tikz">Rysunek · TikZ</span></button>
+                <button type="button" id="export-svg"><span aria-hidden="true">↗</span><span data-i18n="svg">Rysunek · SVG</span></button>
+                <button type="button" id="export-mp4"><span aria-hidden="true">▶</span><span data-i18n="mp4">Ruch · MP4</span></button>
+                </details>
+                <div class="project-menu-rule"></div>
+                <button type="button" id="toggle-theme" aria-pressed="false"><span aria-hidden="true">◐</span><span data-theme-label>Tryb ciemny</span></button>
+                <label class="project-menu-select"><span data-i18n="language">Język</span><select id="language-select" aria-label="Język"><option value="pl">PL</option><option value="en">EN</option></select></label>
+                <div class="project-menu-rule"></div>
+                <button type="button" id="help"><span aria-hidden="true">ⓘ</span><span data-i18n="help">Pomoc</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label class="tool-search"><span aria-hidden="true">⌕</span><input id="tool-search" placeholder="Znajdź narzędzie…" data-i18n-placeholder="searchTools" aria-label="Szukaj narzędzia" autocomplete="off"><kbd>/</kbd></label>
+        <div id="custom-tool-prompt" class="custom-tool-prompt" hidden></div>
+        <div class="toolbar-grid" id="tools"></div>
+        <button id="add-tools" class="add-tools" type="button" data-i18n-title="addTools" title="Dodaj konstrukcje" aria-label="Dodaj konstrukcje">＋</button>
+
+        <div class="divider"></div>
+
+      </div>
+    </aside>
+    <div id="sidebar-resize" class="sidebar-resize" role="separator" aria-orientation="vertical" aria-label="Szerokość panelu konstrukcji" aria-valuemin="220" aria-valuemax="540" aria-valuenow="264" tabindex="0" title="Zmień szerokość panelu" data-i18n-title="resizeTools"></div>
+    <main class="workspace" id="workspace">
+      <button class="iconbtn mobile-toggle workspace-toggle workspace-toggle-left" id="mobile-tools" aria-label="Otwórz narzędzia" aria-expanded="false" aria-controls="left-sidebar" title="Narzędzia">☰</button>
+      <button class="iconbtn mobile-toggle workspace-toggle workspace-toggle-right" id="mobile-objects" aria-label="Otwórz analizę" aria-expanded="false" aria-controls="right-sidebar" title="Obiekty / zdania / animacja">☷</button>
+      <div class="workspace-svg-wrap" id="stage-wrap">
+        <svg id="stage" viewBox="0 0 1000 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interaktywna płaszczyzna geometryczna">
+          <defs><filter id="point-glow"><feGaussianBlur stdDeviation="5"/></filter></defs>
+          <g id="trace-layer"></g><g id="conic-layer"></g><g id="line-layer"></g><g id="pair-layer"></g><g id="point-layer"></g><g id="label-layer"></g><g id="hover-layer"></g>
+        </svg>
+
+        <div class="stage-corner"><button class="corner-control" id="zoom-out" title="Oddal">−</button><button class="corner-control" id="fit" title="Resetuj widok">⌖</button><button class="corner-control" id="zoom-in" title="Przybliż">＋</button><button class="corner-control panel-toggle" id="toggle-timeline" type="button" aria-controls="timeline" aria-expanded="true" title="Zwiń pasek czasu" aria-label="Zwiń pasek czasu"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M3 12h14"/></svg></button><button class="corner-control panel-toggle" id="toggle-right-panel" type="button" aria-controls="right-sidebar" aria-expanded="true" title="Zwiń prawy panel" aria-label="Zwiń prawy panel"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M12 3v14"/></svg></button></div>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="timeline-main">
+          <button class="play" id="play" title="Animacja (spacja)">▶</button>
+          <div class="time-wrap">
+            <div class="time-row"><span>PARAMETR RZUTOWY <b>[s:t]</b></span><span class="time-value" id="time-value">t = 0</span></div>
+            <div class="time-slider">
+            <input class="range" type="range" id="time" min="-180" max="180" step=".01" value="0" aria-label="Parametr animacji">
+            <div id="domain-track" class="domain-track" hidden aria-label="Położenia szczególne na suwaku czasu"></div>
+            </div>
+          </div>
+          <div class="speed-control" aria-label="Prędkość animacji">
+            <label for="speed" data-i18n="speed">Prędkość</label>
+            <input type="range" id="speed" min="0.05" max="8" step="0.01" value="1" aria-label="Suwak prędkości animacji">
+            <div class="speed-number-wrap"><input type="number" id="speed-input" value="1" min="0.001" step="any" inputmode="decimal" aria-label="Własna prędkość animacji"><span>×</span></div>
+          </div>
+        </div>
+        <div class="time-sensitivity"><label for="time-sensitivity" data-i18n="sensitivity">Czułość</label><input type="range" id="time-sensitivity" min="-4" max="4" step="0.1" value="0" aria-label="Czułość suwaka czasu" title="W prawo: większa precyzja blisko zera. Nieskończoności pozostają na końcach."><output id="time-scale-value">τ × 1</output></div>
+        <div class="time-legend"><span>t = −∞</span><span>t = 0</span><span>t = +∞</span></div>
+      </div>
+    </main>
+    <aside class="sidebar right" id="right-sidebar">
+      <div class="mobile-sheet-header"><button type="button" id="mobile-sheet-resize" aria-label="Rozwiń panel" aria-expanded="false" title="Rozwiń lub zmniejsz panel"><span class="mobile-sheet-handle" aria-hidden="true"></span><span id="mobile-sheet-caption">Analiza konstrukcji</span><span class="mobile-sheet-resize-icon" aria-hidden="true">⌃</span></button><button type="button" id="mobile-sheet-close" aria-label="Zamknij panel">✕</button></div>
+      <div class="right-tabs" role="tablist" aria-label="Panele analizy">
+        <button type="button" class="right-tab" id="tab-objects" role="tab" aria-controls="panel-objects" aria-selected="true" tabindex="0" data-i18n="objects">Obiekty</button>
+        <button type="button" class="right-tab" id="tab-statement" role="tab" aria-controls="panel-statement" aria-selected="false" tabindex="-1" data-i18n="statementDegree">Stopień zdania</button>
+        <button type="button" class="right-tab" id="tab-animation" role="tab" aria-controls="panel-animation" aria-selected="false" tabindex="-1" data-i18n="animation">Animacja</button>
+        <button class="iconbtn" id="toggle-degrees" title="Pokaż lub ukryj stopnie na rysunku" aria-label="Pokaż lub ukryj stopnie na rysunku">d°</button>
+      </div>
+      <div id="panel-objects" class="right-panel" role="tabpanel" aria-labelledby="tab-objects">
+        <div id="objects" class="object-list"></div>
+        <div class="inspector" id="inspector"><div class="inspect-placeholder"><div class="big">◇</div><span data-i18n="placeholder">Zaznacz obiekt, aby zobaczyć jego stopień i zależności.</span></div></div>
+      </div>
+      <div id="panel-statement" class="right-panel" role="tabpanel" aria-labelledby="tab-statement" hidden>
+        <section id="degree-sheet" class="degree-sheet" aria-label="Kartka dowodu MMP">
+          <div id="degree-sheet-body" class="sheet-body">
+            <select id="sheet-kind" class="sheet-select" aria-label="Rodzaj zdania"></select>
+            <div id="sheet-args" class="sheet-args"></div>
+            <div id="sheet-result" class="sheet-result" aria-live="polite"></div>
+          </div>
+        </section>
+      </div>
+      <div id="panel-animation" class="right-panel" role="tabpanel" aria-labelledby="tab-animation" hidden>
+        <section id="animation-assistant" class="degree-sheet" aria-label="Asystent wyboru animacji MMP">
+          <div class="sheet-body" id="animation-assistant-body">
+            <select id="anim-kind" class="sheet-select" aria-label="Rodzaj zdania"></select>
+            <div id="anim-args" class="sheet-args"></div>
+
+            <div class="anim-actions" id="anim-actions" hidden><button type="button" class="btn btn-primary" id="anim-search">Szukaj animacji</button></div>
+            <div id="anim-result" class="sheet-result" aria-live="polite"></div>
+          </div>
+        </section>
+      </div>
+    </aside>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<input type="file" accept=".json,application/json" id="import-input">
+<input type="file" accept=".ggb,.xml" id="geogebra-input" hidden>
+<div id="modal-host"></div>
+
+
+
+
+
+
+
+
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>

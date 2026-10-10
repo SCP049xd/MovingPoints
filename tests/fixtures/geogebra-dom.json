@@ -1,0 +1,301 @@
+{
+  "tagName": "geogebra",
+  "attributes": {},
+  "children": [
+    {
+      "tagName": "construction",
+      "attributes": {},
+      "children": [
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "point",
+            "label": "A"
+          },
+          "children": [
+            {
+              "tagName": "coords",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "z": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "point",
+            "label": "B"
+          },
+          "children": [
+            {
+              "tagName": "coords",
+              "attributes": {
+                "x": "4",
+                "y": "0",
+                "z": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "point",
+            "label": "C"
+          },
+          "children": [
+            {
+              "tagName": "coords",
+              "attributes": {
+                "x": "0",
+                "y": "3",
+                "z": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "command",
+          "attributes": {
+            "name": "Midpoint"
+          },
+          "children": [
+            {
+              "tagName": "input",
+              "attributes": {
+                "a0": "A",
+                "a1": "B"
+              },
+              "children": []
+            },
+            {
+              "tagName": "output",
+              "attributes": {
+                "a0": "M"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "point",
+            "label": "M"
+          },
+          "children": [
+            {
+              "tagName": "coords",
+              "attributes": {
+                "x": "2",
+                "y": "0",
+                "z": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "command",
+          "attributes": {
+            "name": "Line"
+          },
+          "children": [
+            {
+              "tagName": "input",
+              "attributes": {
+                "a0": "A",
+                "a1": "B"
+              },
+              "children": []
+            },
+            {
+              "tagName": "output",
+              "attributes": {
+                "a0": "g"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "line",
+            "label": "g"
+          },
+          "children": []
+        },
+        {
+          "tagName": "command",
+          "attributes": {
+            "name": "OrthogonalLine"
+          },
+          "children": [
+            {
+              "tagName": "input",
+              "attributes": {
+                "a0": "C",
+                "a1": "g"
+              },
+              "children": []
+            },
+            {
+              "tagName": "output",
+              "attributes": {
+                "a0": "h"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "line",
+            "label": "h"
+          },
+          "children": []
+        },
+        {
+          "tagName": "command",
+          "attributes": {
+            "name": "Intersect"
+          },
+          "children": [
+            {
+              "tagName": "input",
+              "attributes": {
+                "a0": "g",
+                "a1": "h"
+              },
+              "children": []
+            },
+            {
+              "tagName": "output",
+              "attributes": {
+                "a0": "F"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "point",
+            "label": "F"
+          },
+          "children": [
+            {
+              "tagName": "coords",
+              "attributes": {
+                "x": "0",
+                "y": "0",
+                "z": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "command",
+          "attributes": {
+            "name": "Circle"
+          },
+          "children": [
+            {
+              "tagName": "input",
+              "attributes": {
+                "a0": "A",
+                "a1": "B"
+              },
+              "children": []
+            },
+            {
+              "tagName": "output",
+              "attributes": {
+                "a0": "c"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "conic",
+            "label": "c"
+          },
+          "children": []
+        },
+        {
+          "tagName": "command",
+          "attributes": {
+            "name": "Intersect"
+          },
+          "children": [
+            {
+              "tagName": "input",
+              "attributes": {
+                "a0": "h",
+                "a1": "c"
+              },
+              "children": []
+            },
+            {
+              "tagName": "output",
+              "attributes": {
+                "a0": "P",
+                "a1": "Q"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "point",
+            "label": "P"
+          },
+          "children": [
+            {
+              "tagName": "coords",
+              "attributes": {
+                "x": "0",
+                "y": "-4",
+                "z": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tagName": "element",
+          "attributes": {
+            "type": "point",
+            "label": "Q"
+          },
+          "children": [
+            {
+              "tagName": "coords",
+              "attributes": {
+                "x": "0",
+                "y": "4",
+                "z": "1"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

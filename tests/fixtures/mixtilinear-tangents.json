@@ -1,0 +1,479 @@
+{
+  "format": "mmp-studio-1",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "A",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -323,
+        "qy": 298,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -65,
+        "qy": 69,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -423,
+        "qy": 70,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "c",
+      "type": "circle3",
+      "parents": [
+        3,
+        1,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "c1",
+      "type": "mixtilinearCircle",
+      "parents": [
+        3,
+        1,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 6,
+      "name": "c2",
+      "type": "incircle",
+      "parents": [
+        1,
+        2,
+        3
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 7,
+      "name": "a",
+      "type": "line",
+      "parents": [
+        3,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 8,
+      "name": "b",
+      "type": "line",
+      "parents": [
+        2,
+        1
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 9,
+      "name": "d",
+      "type": "line",
+      "parents": [
+        1,
+        3
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 10,
+      "name": "M",
+      "type": "moveCircle",
+      "parents": [
+        4
+      ],
+      "meta": {
+        "anchor": [
+          "133651864656",
+          "-169667939449",
+          "-34427379136"
+        ]
+      },
+      "visible": true
+    },
+    {
+      "id": 11,
+      "name": "e",
+      "type": "tangentFrom",
+      "parents": [
+        10,
+        6
+      ],
+      "meta": {
+        "branch": 0
+      },
+      "visible": true
+    },
+    {
+      "id": 12,
+      "name": "f",
+      "type": "tangentFrom",
+      "parents": [
+        10,
+        6
+      ],
+      "meta": {
+        "branch": 1
+      },
+      "visible": true
+    },
+    {
+      "id": 13,
+      "name": "P",
+      "type": "contactFrom",
+      "parents": [
+        10,
+        6
+      ],
+      "meta": {
+        "branch": 0
+      },
+      "visible": true
+    },
+    {
+      "id": 14,
+      "name": "Q",
+      "type": "contactFrom",
+      "parents": [
+        10,
+        6
+      ],
+      "meta": {
+        "branch": 1
+      },
+      "visible": true
+    },
+    {
+      "id": 15,
+      "name": "X1",
+      "type": "intersection",
+      "parents": [
+        7,
+        12
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 16,
+      "name": "X2",
+      "type": "intersection",
+      "parents": [
+        7,
+        11
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 17,
+      "name": "D",
+      "type": "root",
+      "parents": [
+        4,
+        5
+      ],
+      "meta": {
+        "branch": 2
+      },
+      "visible": true
+    },
+    {
+      "id": 18,
+      "name": "c3",
+      "type": "circle3",
+      "parents": [
+        16,
+        15,
+        10
+      ],
+      "meta": {},
+      "visible": true
+    }
+  ],
+  "nextId": 19,
+  "selected": 14,
+  "statements": [],
+  "nextStatementId": 1,
+  "cam": {
+    "cx": 0,
+    "cy": 0,
+    "zoom": 57
+  },
+  "animationConstraints": {
+    "fixedPointIds": []
+  },
+  "motionBinding": {
+    "candidate": {
+      "pointId": 10,
+      "carrierId": 4,
+      "type": "moveCircle",
+      "parents": [
+        4
+      ],
+      "meta": {
+        "anchor": [
+          "133651864656",
+          "-169667939449",
+          "-34427379136"
+        ]
+      },
+      "title": "M po okręgu c",
+      "detail": "Oryginalny punkt M pozostaje na c w całym ruchu.",
+      "constrained": true,
+      "method": "single-point"
+    },
+    "source": [
+      {
+        "id": 1,
+        "name": "A",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -323,
+          "qy": 298,
+          "unit": 64
+        },
+        "visible": true
+      },
+      {
+        "id": 2,
+        "name": "B",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -65,
+          "qy": 69,
+          "unit": 64
+        },
+        "visible": true
+      },
+      {
+        "id": 3,
+        "name": "C",
+        "type": "fixed",
+        "parents": [],
+        "meta": {
+          "qx": -423,
+          "qy": 70,
+          "unit": 64
+        },
+        "visible": true
+      },
+      {
+        "id": 4,
+        "name": "c",
+        "type": "circle3",
+        "parents": [
+          3,
+          1,
+          2
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 5,
+        "name": "c1",
+        "type": "mixtilinearCircle",
+        "parents": [
+          3,
+          1,
+          2
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 6,
+        "name": "c2",
+        "type": "incircle",
+        "parents": [
+          1,
+          2,
+          3
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 7,
+        "name": "a",
+        "type": "line",
+        "parents": [
+          3,
+          2
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 8,
+        "name": "b",
+        "type": "line",
+        "parents": [
+          2,
+          1
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 9,
+        "name": "d",
+        "type": "line",
+        "parents": [
+          1,
+          3
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 10,
+        "name": "M",
+        "type": "onCircle",
+        "parents": [
+          4
+        ],
+        "meta": {
+          "dx": 2793,
+          "dy": 3927,
+          "qx": -994,
+          "qy": 1262
+        },
+        "visible": true
+      },
+      {
+        "id": 11,
+        "name": "e",
+        "type": "tangentFrom",
+        "parents": [
+          10,
+          6
+        ],
+        "meta": {
+          "branch": 0
+        },
+        "visible": true
+      },
+      {
+        "id": 12,
+        "name": "f",
+        "type": "tangentFrom",
+        "parents": [
+          10,
+          6
+        ],
+        "meta": {
+          "branch": 1
+        },
+        "visible": true
+      },
+      {
+        "id": 13,
+        "name": "P",
+        "type": "contactFrom",
+        "parents": [
+          10,
+          6
+        ],
+        "meta": {
+          "branch": 0
+        },
+        "visible": true
+      },
+      {
+        "id": 14,
+        "name": "Q",
+        "type": "contactFrom",
+        "parents": [
+          10,
+          6
+        ],
+        "meta": {
+          "branch": 1
+        },
+        "visible": true
+      },
+      {
+        "id": 15,
+        "name": "X1",
+        "type": "intersection",
+        "parents": [
+          7,
+          12
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 16,
+        "name": "X2",
+        "type": "intersection",
+        "parents": [
+          7,
+          11
+        ],
+        "meta": {},
+        "visible": true
+      },
+      {
+        "id": 17,
+        "name": "D",
+        "type": "root",
+        "parents": [
+          4,
+          5
+        ],
+        "meta": {
+          "branch": 2
+        },
+        "visible": true
+      },
+      {
+        "id": 18,
+        "name": "c3",
+        "type": "circle3",
+        "parents": [
+          16,
+          15,
+          10
+        ],
+        "meta": {},
+        "visible": true
+      }
+    ]
+  }
+}

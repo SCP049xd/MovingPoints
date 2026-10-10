@@ -1,0 +1,233 @@
+{
+  "format": "mmp-studio-1",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "A",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -154,
+        "qy": 267,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": 107,
+        "qy": -104,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -340,
+        "qy": -91,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "D",
+      "type": "fixed",
+      "parents": [],
+      "meta": {
+        "qx": -93,
+        "qy": 33,
+        "unit": 64
+      },
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "ω",
+      "type": "circle3",
+      "parents": [
+        3,
+        1,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 6,
+      "name": "P",
+      "type": "orthocenter",
+      "parents": [
+        3,
+        1,
+        2
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 7,
+      "name": "a",
+      "type": "line",
+      "parents": [
+        3,
+        4
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 8,
+      "name": "b",
+      "type": "line",
+      "parents": [
+        2,
+        4
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 9,
+      "name": "c",
+      "type": "line",
+      "parents": [
+        1,
+        4
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 10,
+      "name": "Q",
+      "type": "otherIntersection",
+      "parents": [
+        1,
+        9,
+        5
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 11,
+      "name": "R",
+      "type": "otherIntersection",
+      "parents": [
+        2,
+        8,
+        5
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 12,
+      "name": "S",
+      "type": "otherIntersection",
+      "parents": [
+        3,
+        7,
+        5
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 13,
+      "name": "d",
+      "type": "line",
+      "parents": [
+        1,
+        3
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 14,
+      "name": "e",
+      "type": "line",
+      "parents": [
+        2,
+        3
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 15,
+      "name": "f",
+      "type": "line",
+      "parents": [
+        2,
+        1
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 16,
+      "name": "T",
+      "type": "reflect",
+      "parents": [
+        11,
+        13
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 17,
+      "name": "U",
+      "type": "reflect",
+      "parents": [
+        12,
+        15
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 18,
+      "name": "V",
+      "type": "reflect",
+      "parents": [
+        10,
+        14
+      ],
+      "meta": {},
+      "visible": true
+    },
+    {
+      "id": 19,
+      "name": "ω1",
+      "type": "circle3",
+      "parents": [
+        17,
+        16,
+        18
+      ],
+      "meta": {},
+      "visible": true
+    }
+  ],
+  "nextId": 20,
+  "selected": 4,
+  "statements": [],
+  "nextStatementId": 1,
+  "cam": {
+    "cx": 0.07947069974737031,
+    "cy": 0.4796120235754442,
+    "zoom": 65.43460636562818
+  }
+}
